@@ -35,5 +35,24 @@ public class RetailAccountPage extends BaseSetup {
 		
 		@FindBy(css = "#signupBtn")
 		public WebElement signupButton;
+		
+		@FindBy(xpath = "//input[@id='nameInput']")
+		public WebElement NameField;
+		
+		@FindBy(id = "personalPhoneInput")
+		public WebElement PhoneNumberField;
+		
+		@FindBy(css = "#personalUpdateBtn")
+		public WebElement UpdateButton;
+		
+		@FindBy(xpath = "//div[@class='Toastify']")
+		public WebElement UdateWindows;
+		
+		@FindBy(xpath = "//img[@alt='profile pic']")
+		public WebElement accountProfilePicture;
+		
+		
+		
+		
 }
 

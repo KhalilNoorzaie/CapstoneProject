@@ -5,6 +5,8 @@ Feature: Retail Page applicaiton
     Given User is on retail website
     When User search for 'Pokemon' item
     Then Product should be displayed
+    #Then user should see a new page 
+    
     
     
     
