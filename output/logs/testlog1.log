@@ -449,3 +449,12 @@
 2023-03-06 19:12:49,843 [main] INFO logger_File - User update Name and Phone
 2023-03-06 19:12:50,073 [main] INFO logger_File - User click on Update button
 2023-03-06 19:12:50,193 [main] INFO logger_File - Information is update
+2023-03-06 19:41:14,716 [main] INFO logger_File - User is on retail website
+2023-03-06 19:41:14,921 [main] INFO logger_File - user clicked on Sign in Option
+2023-03-06 19:41:15,324 [main] INFO logger_File - user entered email and password
+2023-03-06 19:41:15,434 [main] INFO logger_File - User click on login button
+2023-03-06 19:41:15,689 [main] INFO logger_File - User should be logged in into Account
+2023-03-06 19:41:15,923 [main] INFO logger_File - User click on Account option
+2023-03-06 19:41:16,461 [main] INFO logger_File - User update Name and Phone
+2023-03-06 19:41:16,574 [main] INFO logger_File - User click on Update button
+2023-03-06 19:41:16,631 [main] INFO logger_File - Information is update

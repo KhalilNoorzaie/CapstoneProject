@@ -18,10 +18,10 @@ public class RetailOrderSteps extends CommonUtility {
 		
 	}
 	
-	@And("User click on first order in list")
-	public void userClickOnFirstOrderInList() {
-		click(factory.orderPage().);
-		logger.info("User click on Orders section");		
-	}
+//	@And("User click on first order in list")
+//	public void userClickOnFirstOrderInList() {
+//		click(factory.orderPage().);
+//		logger.info("User click on Orders section");		
+//	}
 	
 }
