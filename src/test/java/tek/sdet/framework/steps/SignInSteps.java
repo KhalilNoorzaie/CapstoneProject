@@ -39,7 +39,7 @@ POMFactory factory = new POMFactory();
 	
 	@Then("User should be logged in into Account")
 	public void userShouldBeLoggedInIntoAccount() {
-		Assert.assertTrue(isElementDisplayed(factory.homePage().account));
+		Assert.assertTrue(isElementEnabled(factory.homePage().account));
 		logger.info("user logged in into account");
 		
 	}
@@ -76,7 +76,7 @@ POMFactory factory = new POMFactory();
 	@Then("User should be logged into account page")
 	public void userShouldBeLoggedIntoAccountPage() {
 		//Assert.assertTrue(isElementDisplayed(factory.signInPage().profileImage));
-		Assert.assertTrue(isElementDisplayed(factory.homePage().account));
+		Assert.assertTrue(isElementEnabled(factory.homePage().account));
 		logger.info("Account was created");
 		
 	}

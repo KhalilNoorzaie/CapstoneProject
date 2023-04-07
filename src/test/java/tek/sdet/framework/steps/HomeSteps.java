@@ -28,7 +28,7 @@ public class HomeSteps extends CommonUtility {
 
 	@Then("User verify retail page logo is present")
 	public void userVerifyRetailPageLogoIsPresent() {
-		Assert.assertTrue(isElementDisplayed(factory.homePage().logo));
+		Assert.assertTrue(isElementEnabled(factory.homePage().logo));
 		logger.info("logo is present");
 
 	}
@@ -55,7 +55,7 @@ public class HomeSteps extends CommonUtility {
 
 	@Then("Item should be present")
 	public void itemShouldBePresent() {
-		Assert.assertTrue(isElementDisplayed(factory.homePage().playStationItem));
+		Assert.assertTrue(isElementEnabled(factory.homePage().playStationItem));
 		logger.info("item is present");
 
 	}
@@ -79,7 +79,7 @@ public class HomeSteps extends CommonUtility {
 
 		HighlightElement(factory.homePage().cart);
 
-		Assert.assertTrue(isElementDisplayed(factory.homePage().cart));
+		Assert.assertTrue(isElementEnabled(factory.homePage().cart));
 		logger.info("cart icon is present");
 		scrollPageDownWithJS();
 
@@ -91,7 +91,7 @@ public class HomeSteps extends CommonUtility {
 		List<List<String>> shopByDepartment = dataTable.asLists(String.class);
 
 		for (int i = 0; i < shopByDepartment.get(0).size(); i++) {
-			Assert.assertTrue(isElementDisplayed(
+			Assert.assertTrue(isElementEnabled(
 					getDriver().findElement(By.xpath("//span[text()='" + shopByDepartment.get(0).get(i) + "']"))));
 			logger.info(shopByDepartment.get(0).get(i) + " is present");
 		}

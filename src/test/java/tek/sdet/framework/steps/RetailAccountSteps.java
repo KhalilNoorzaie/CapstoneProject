@@ -45,7 +45,7 @@ public class RetailAccountSteps extends CommonUtility {
 	@Then("User profile information should be updated")
 	public void userProfileInformationShouldBeUpdated() {
 		waitTillPresence(factory.accountPage().personalInformationUpdateMessage);
-		Assert.assertTrue(isElementDisplayed(factory.accountPage().personalInformationUpdateMessage));
+		Assert.assertTrue(isElementEnabled(factory.accountPage().personalInformationUpdateMessage));
 		String actualMessage = factory.accountPage().personalInformationUpdateMessage.getText();
 		String expectedMessage = "Personal Information Updated Successfully";
 		Assert.assertEquals(expectedMessage, actualMessage);
@@ -192,7 +192,7 @@ public class RetailAccountSteps extends CommonUtility {
 	public void paymentDetailsShouldBeRemoved() {
 
 		try {
-			Assert.assertFalse(isElementDisplayed(factory.accountPage().cardPresent));
+			Assert.assertFalse(isElementEnabled(factory.accountPage().cardPresent));
 			logger.info("payment details removed from account");
 
 		} catch (AssertionError e) {
@@ -269,7 +269,7 @@ public class RetailAccountSteps extends CommonUtility {
 	@Then("Address details should be removed")
 	public void addressDetailsShouldBeRemoved() {
 		try {
-			Assert.assertFalse(isElementDisplayed(factory.accountPage().removeAddressOption));
+			Assert.assertFalse(isElementEnabled(factory.accountPage().removeAddressOption));
 			logger.info("Address details removed");
 		} catch (AssertionError e) {
 			logger.info(e.getMessage());
